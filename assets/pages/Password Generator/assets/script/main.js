@@ -1,19 +1,3 @@
-// function generatePassword(length) {
-//   let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-//   let password = "";
-//   for (let i = 0; i < length; i++) {
-//     password += charset.charAt(Math.floor(Math.random() * charset.length));
-//   }
-
-//   console.log(password)
-
-
-//   return password;
-
-// }
-
-// generatePassword(10)
-
 function generatePassword() {
   const length = document.getElementById('length').value;
   const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$';
@@ -24,3 +8,13 @@ function generatePassword() {
   document.getElementById('password').textContent = password;
 }
 
+function copyText() {
+  var copyText = document.getElementById("password");
+  var textArea = document.createElement("textarea");
+  textArea.value = copyText.textContent;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("Copy");
+  textArea.remove();
+  alert("Text copied to clipboard");
+}
