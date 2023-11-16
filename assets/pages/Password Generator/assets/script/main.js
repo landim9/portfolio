@@ -1,3 +1,5 @@
+var passbar = document.querySelector('.passbar')
+
 function generatePassword() {
   const length = document.getElementById('length').value;
   const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$';
@@ -6,6 +8,8 @@ function generatePassword() {
     password += charset.charAt(Math.floor(Math.random() * n));
   }
   document.getElementById('password').textContent = password;
+
+  passbar.style.display = 'block'
 }
 
 function copyText() {

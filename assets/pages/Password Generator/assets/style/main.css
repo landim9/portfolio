@@ -95,10 +95,12 @@ body {
 
 .passbar {
     display: flex;
+    align-items: center;
     justify-content: left;
     background-color: white;
     border-radius: 4px;
-    width: 15vw;
+    width: 11.5vw;
+    height: 5vh;
     padding: 5px;
     cursor: pointer;
 }
