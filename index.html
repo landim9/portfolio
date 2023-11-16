@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="shortcut icon" href="assets/img/927500313834.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="assets/img/_77ae3517-05bd-42f0-80f0-81b4d120f425.png" alt="">
+            <img src="assets/img/927500313834.png" alt="">
         </div>
-        <nav class="island">
-            <div class="subtext">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#contact">CONTACT</a>
+        <nav class="menu">
+            <div class="nav-text">
+            <a href="#home"><ion-icon name="home-sharp" class="nav-icons"></ion-icon>HOME</a>
+            <a href="#about"><ion-icon name="person-sharp" class="nav-icons"></ion-icon>ABOUT</a>
+            <a href="#projects"><ion-icon name="briefcase-sharp" class="nav-icons"></ion-icon>PROJECTS</a>
+            <a href="#skills"><ion-icon name="briefcase-sharp" class="nav-icons"></ion-icon>SKILLS</a>
+            <a href="#contact"><ion-icon name="call-sharp" class="nav-icons"></ion-icon>CONTACT</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" >
+        <section id="home" class="home">
 
             <div class="principal" >
                 <h2>Hi there!</h2>
                 <h3>IM <span>aaaaaaa</span></h3>
+                <p>I'm a web developer from the UK.</p>
+                
+
 
             </div>
 
@@ -61,7 +65,7 @@
         </section>
 
 
-        <section id="about">
+        <section id="about" class="about">
             <h1 class="underline">ABOUT ME</h1>
 
 
@@ -83,15 +87,73 @@
 
         </section>
         
-        <section id="skills">
+        <section id="skills" class="skills">
             <h1 class="underline">SKILLS</h1>
 
-
-            <div class="language">
-                <ion-icon name="logo-html5" size="large"></ion-icon>
-                <ion-icon name="logo-css3" size="large"></ion-icon>
-                <ion-icon name="logo-javascript" size="large"></ion-icon>
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
+    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>CSS <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>JavaScript <span>50%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>Python <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                        <span class="animate scroll" style="--i:3;"></span>
+                    </div>
+                </div>
+    
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
+    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Web Design <span>95%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>Web Development <span>60%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>Graphic Design <span>85%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+    
+                            <div class="progress">
+                                <h3>UX / UI <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                        <span class="animate scroll" style="--i:6;"></span>
+                    </div>
+                </div>
             </div>
+
+
+                <ion-icon name="logo-html5" size="large" class="language"></ion-icon>
+                <ion-icon name="logo-css3" size="large" class="language"></ion-icon>
+                <ion-icon name="logo-javascript" size="large" class="language"></ion-icon>
             
         </section>
 
@@ -103,7 +165,7 @@
 
 
             <form>
-                <label>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</label>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                 <input type="text"  class="" placeholder="Name" required>
                 <input type="email"  class="" placeholder="Email" required>
                 <input type="tel"  class="" placeholder="Phone Number" required>
@@ -115,6 +177,9 @@
                 <button type="submit"></button>
             </form>
             
+            <div class="google-map">
+                <iframe src="https://maps.app.goo.gl/mePMLo1ZiMYY8kJn9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
         </section>
 
         
