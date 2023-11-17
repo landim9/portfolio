@@ -20,5 +20,5 @@ function copyText() {
   textArea.select();
   document.execCommand("Copy");
   textArea.remove();
-  alert("Text copied to clipboard");
+  alert("Texto copiado para area de transferencia");
 }
