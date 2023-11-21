@@ -22,37 +22,56 @@
             </label>
 
             <ul>
-                <li><a href="#home" class="hover"><ion-icon name="home-sharp" class="nav-icons"></ion-icon> HOME</a></li>
-                <li><a href="#about" class="hover"><ion-icon name="person-sharp" class="nav-icons"></ion-icon> ABOUT</a></li>
+                <li><a href="#home" class="hover"><ion-icon name="home-sharp" class="nav-icons"></ion-icon> HOME</a>
+                </li>
+                <li><a href="#about" class="hover"><ion-icon name="person-sharp" class="nav-icons"></ion-icon> ABOUT</a>
+                </li>
                 <li><a href="#projects" class="hover"><ion-icon name="rocket-sharp" class="nav-icons"></ion-icon>
-                    PROJECTS</a></li>
+                        PROJECTS</a></li>
                 <li><a href="#skills" class="hover"><ion-icon name="briefcase-sharp" class="nav-icons"></ion-icon>
-                    SKILLS</a></li>
-                <li><a href="#contact" class="hover"><ion-icon name="call-sharp" class="nav-icons" class="hover"></ion-icon>
-                    CONTACT</a></li>
+                        SKILLS</a></li>
+                <li><a href="#contact" class="hover"><ion-icon name="call-sharp" class="nav-icons"
+                            class="hover"></ion-icon>
+                        CONTACT</a></li>
             </ul>
             <div class="nav-text">
-                
-                
-                
-                
-                
 
-                
+
+
+
+
+
+
             </div>
         </nav>
 
-        
+
     </header>
 
     <main>
         <section id="home" class="home">
 
-                <h2>Hi there!</h2>
-                <p>I'm a full stack developer from Brazil.</p>   
-                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>             
-                <a href=""><ion-icon name="logo-github"></ion-icon></a>             
-                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>             
+            <div class="principal">
+                <h1>Hi There! <br> I'm Rafael Landim.</h1>
+                <p>I am a full stack developer, passionate about technology and always looking to learn more.</p>
+
+                <p>I am a web developer and designer from Brazil, specialized in creating websites that are easy to use
+                    and visually appealing.</p>
+
+
+                <p>I'm a full stack developer from Brazil.</p>
+
+                <div class="social">
+                    <a href=""><ion-icon name="logo-instagram" class="social"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github" class="social"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-linkedin" class="social"></ion-icon></a>
+                </div>
+
+
+            </div>
+
+
+
 
 
 
@@ -66,17 +85,20 @@
                 <div class="content-about">
                     <div class="info">
                         <h2>HELLO! I'M <span class="rafael">RAFAEL</span></h2>
+                        <br>
                         <p>My name is Rafael Landim and I am a 16 years old web developer from Brazil. I have been
                             working with
                             <span class="js">JAVASCRIPT</span>,
-                            <span class="h-c">HTML and CSS.</span></p>
-
+                            <span class="h-c">HTML and CSS.</span>
+                        </p>
+                        <br>
                         <p>I love to learn new things about programming languages and frameworks, always looking for the
                             best solutions to solve problems in
                             the web development world.</p>
-
+                        <br>
                         <p>always looking for opportunities to improve myself.
                             if you want to know more, feel free to contact me.</p>
+                        <br>
                         <p>I have experience in creating websites, developing mobile applications, and designing
                             interfaces for web pages.</p>
                     </div>
@@ -205,27 +227,38 @@
 
 
 
-            <form>
-                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
+            <div class="form">
+                <p class="form-text">Feel free to get in touch with me. I am always open to discussing new projects,
+                    creative ideas or
                     opportunities to be part of your visions.</p>
-                <div class="input-grid">
+                <div class="input-group">
                     <div class="grizinho">
-                        <input type="text" class="" placeholder="Name" required>
-                        <input type="email" class="" placeholder="Email" required>
+                        <input required="" type="text" name="text" placeholder="Name" class="input">
+
+
+                        <input type="email" class="input" id="input1" placeholder="Email" required>
                     </div>
-                    <div class="input-grid">
+
+                    <div class="input-group">
                         <div class="grizinho">
-                            <input type="tel" class="" placeholder="Phone number" required>
-                            <input type="text" class="" placeholder="Subject" required>
+
+                            <input type="tel" class="input" placeholder="Phone Number" id="input2" required>
+
+                            <input type="text" class="input" placeholder="Subject" id="input3" required>
                         </div>
 
                         <textarea name="" id="" cols="30" rows="10" placeholder="Type Your Message Here..."
                             required></textarea>
+                        <div>
+                            <button type="submit" class="submit">SEND</button>
+                        </div>
 
-                        <button type="submit" class="submit">Send</button>
-            </form>
+                    </div>
+                </div>
+            </div>
 
-            
+
+
         </section>
 
 
