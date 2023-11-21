@@ -50,6 +50,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     max-width: 960px;
     margin: 0 auto;
@@ -64,7 +65,7 @@ body {
 
 
 .container input[type="number"] {
-    width: 100%;
+    width: 30vw;
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
@@ -73,7 +74,7 @@ body {
 }
 
 .container button {
-    width: 100%;
+    width: 30vw;
     padding: 10px;
     margin: 5px 0;
     background-color: #3c4858;
@@ -99,8 +100,8 @@ body {
     justify-content: left;
     background-color: white;
     border-radius: 4px;
-    width: 11.5vw;
-    height: 5vh;
+    width: fit-content;
+    height: fit-content;
     padding: 5px;
     cursor: pointer;
 }
