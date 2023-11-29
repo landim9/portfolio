@@ -207,16 +207,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3;
-    width: fit-content;
-    height: fit-content;
+    background-color: transparent;
+    width: 15vw;
     gap: 15px;
     border-radius: .6rem;
 }
 
 .social a {
-    font-size: 50px;
-    color: #000;
+    font-size: 40px;
+    color: #7a7a7a;
+    transition: all 0.5s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
 }
 
 .viewport {
