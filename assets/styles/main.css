@@ -54,8 +54,8 @@ section {
     font-size: 16px;
 }
 
-section h1 {
-    font-size: 50px;
+.section-title {
+    font-size: 55px;
     text-align: center;
 }
 
@@ -165,16 +165,61 @@ body {
     overflow: hidden;
     top: 100px;
     text-align: left;
+    margin: 5px;
 }
 
 .principal h1 {
+    font-size: 50px;
     text-align: left;
 }
 
+.container {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    right: 273px;
+}
 
+.animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 15px;
+}
 
+/* .animation>div>div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+} */
 
+.animation p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    animation: show 8s infinite;
+}
 
+@keyframes show {
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
 
 footer {
     display: flex;
@@ -183,6 +228,7 @@ footer {
     flex-wrap: wrap;
     background-color: #f8f9fa;
     width: 100%;
+    padding: 10px;
 }
 
 .project-container {
@@ -205,10 +251,17 @@ footer {
     padding: 30px;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     gap: 55px;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
 }
 
 
@@ -228,7 +281,7 @@ footer {
     transition: all 0.5s;
 }
 
-.social a:hover{
+.social a:hover {
     transform: scale(1.2);
 }
 
@@ -243,10 +296,10 @@ footer {
     overflow: hidden;
     transition: all 0.5s ease-in;
     z-index: 1;
-   }
-   
-   .btn-project::before,
-   .btn-project::after {
+}
+
+.btn-project::before,
+.btn-project::after {
     content: '';
     position: absolute;
     top: 0;
@@ -256,33 +309,33 @@ footer {
     transition: all 0.5s;
     overflow: hidden;
     z-index: -1;
-   }
-   
-   .btn-project::before {
+}
+
+.btn-project::before {
     left: -10px;
     background: #240046;
-   }
-   
-   .btn-project::after {
+}
+
+.btn-project::after {
     right: -10px;
     background: #5a189a;
-   }
-   
-   .btn-project:hover::before,
-   .btn-project:hover::after {
+}
+
+.btn-project:hover::before,
+.btn-project:hover::after {
     width: 58%;
-   }
-   
-   .btn-project:hover span {
+}
+
+.btn-project:hover span {
     color: #e0aaff;
     transition: 0.3s;
-   }
-   
-   .btn-project span {
+}
+
+.btn-project span {
     color: #03045e;
     font-size: 18px;
     transition: all 0.3s ease-in;
-   }
+}
 
 /* skills */
 
@@ -298,7 +351,7 @@ footer {
     transform: translateX(-50%);
 }
 
- .skills-row {
+.skills-row {
     display: flex;
     grid-gap: 1cm;
     margin: 5px;
@@ -307,10 +360,12 @@ footer {
 .skills-row .skills-column {
     margin-top: 100px;
 }
+
 .skills-box {
     width: 850px;
     height: 100px;
 }
+
 .skills-column .title {
     position: relative;
     display: inline-block;
@@ -566,10 +621,10 @@ textarea {
 
 @keyframes colors {
     0% {
-        color:#c993ff
+        color: #c993ff
     }
 
-    37%{
+    37% {
         color: #8800ff;
     }
 
@@ -577,12 +632,12 @@ textarea {
         color: #7d7d7d;
     }
 
-    75%{
+    75% {
         color: blueviolet;
     }
 
     100% {
-        color:#f8f8f8
+        color: #f8f8f8
     }
 }
 
@@ -595,7 +650,7 @@ textarea {
 
 
 
-@media (max-width:860px) {
+@media (max-width:480px) {
     label #btn {
         display: block;
         transform: translateX(100px);
@@ -636,7 +691,7 @@ textarea {
         display: block;
     }
 
-    
+
 
 
 
@@ -673,7 +728,7 @@ textarea {
         bottom: 70px;
     }
 
-    .card{
+    .card {
         width: 80vw;
     }
 
@@ -685,7 +740,7 @@ textarea {
         left: 40px;
     }
 
-    textarea{
+    textarea {
         width: 70vw;
     }
 }
