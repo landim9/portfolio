@@ -192,15 +192,6 @@ body {
     overflow: hidden;
     margin-left: 15px;
 }
-
-/* .animation>div>div {
-    color: #fff;
-    padding: 4px 12px;
-    height: 45px;
-    margin-bottom: 45px;
-    display: inline-block;
-} */
-
 .animation p {
     display: flex;
     flex-direction: column;
@@ -216,8 +207,14 @@ body {
     25% {
         transform: translateY(-100%);
     }
-    100% {
+    50% {
         transform: translateY(-200%);
+    }
+    75% {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
 
@@ -284,8 +281,6 @@ footer {
 .social a:hover {
     transform: scale(1.2);
 }
-
-/* From uiverse.io by @Ali-Tahmazi99 */
 .btn-project {
     display: inline-block;
     width: 150px;
