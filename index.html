@@ -1,89 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Landim</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
-
 <body>
 
-    <div id="loading-screen">
-        <div id="loading-bar"></div>
-        <div id="loading-text">0%</div>
-    </div>
+<!-- ── LOADING ─────────────────────────────────────── -->
+<div id="loading-screen">
+    <div class="loading-logo">RL</div>
+    <div id="loading-track"><div id="loading-bar"></div></div>
+    <div id="loading-pct">0%</div>
+</div>
 
-    <div class="container">
-        <div class="content">
-            <div class="widget1">
-                <div class="info-user">
-                    <!-- <div class="img-user">
-                        <img src="assets/img/user.jpg" alt="user" class="imagem">
-                    </div> -->
-                    <div class="name-user">
-                        <h1>Rafael Landim</h1>
-                        <span>Cientista da Computação</span>
-                    </div>
-                </div>
-                <div class="info-icon">
-                    <img src="assets/img/smile-icon.png" alt="icon">
+<div class="card">
+    <div class="stack">
+
+        <!-- 1: PROFILE -->
+        <div class="w w-profile">
+            <div class="profile-left">
+                <div class="avatar">RL</div>
+                <!-- Para usar foto: <div class="avatar"><img src="sua-foto.jpg" alt="Rafael Landim"></div> -->
+                <div>
+                    <div class="profile-name">Rafael Landim</div>
+                    <div class="profile-role">Cientista da Computação · Dev Full Stack</div>
                 </div>
             </div>
-            <div class="widget2">
-                <div class="hard-skills">
-                    <span class="destaque">Hard Skills</span>
-                    <div class="skills-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-bootstrap"></i>
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-node"></i>
-                        <i class="fab fa-php"></i>
-                        <i class="fab fa-java"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-wix"></i>
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="widget3">
-                <a href="#" class="tread">
-                    <div class="text-tread">
-                        <span>Tecnico em Desenvolvimento de Sistemas | Senai</span>
-                        <span>Ciencias da Computação | UNIFAJ</span>
-                        <span>Desenvolvedor Web e Industrial</span>
-                    </div>
-                    <!-- <div class="img-tread"></div> -->
-                </a>
-                <div class="redes-sociais">
-                    <a class="box-social tiktok" href="https://www.tiktok.com/@"><i
-                            class="fab fa-tiktok"></i></a>
-                    <a class="box-social instagram" href="https://www.instagram.com/landim1st/"><i
-                            class="fab fa-instagram"></i></a>
-                    <a class="box-social github" href="https://github.com/landim9"><i
-                            class="fab fa-github"></i></a>
-                    <a class="box-social linkedin" href="https://www.linkedin.com/in/rafael-david-792415375/"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="widget4">
-                <a href="assets/pages/portfolio/portfolio.html" class="meu-site" target="_blank">
-                    <img src="assets/img/web-white-icon.png" alt="web">
-                    <h1>Meu site portfolio</h1>
-                </a>
-            </div>
-            <div class="widget6">
-                <span>Estou escutando...</span>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7Cus5NmQFHfg9IUpCNrIuq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="profile-badge">⚡</div>
+        </div>
+
+        <!-- 2: STATUS -->
+        <div class="w w-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Disponível para <strong>freelas & oportunidades</strong></span>
+        </div>
+
+        <!-- 3: SKILLS -->
+        <div class="w w-skills">
+            <div class="chip-label">Hard Skills</div>
+            <div class="skills-wrap">
+                <span class="skill-tag"><i class="fab fa-html5"></i>HTML5</span>
+                <span class="skill-tag"><i class="fab fa-css3-alt"></i>CSS3</span>
+                <span class="skill-tag"><i class="fab fa-js"></i>JavaScript</span>
+                <span class="skill-tag"><i class="fab fa-react"></i>React</span>
+                <span class="skill-tag"><i class="fab fa-node"></i>Node.js</span>
+                <span class="skill-tag"><i class="fab fa-php"></i>PHP</span>
+                <span class="skill-tag"><i class="fab fa-java"></i>Java</span>
+                <span class="skill-tag"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+                <span class="skill-tag"><i class="fab fa-github"></i>Git</span>
+                <span class="skill-tag"><i class="fab fa-wordpress"></i>WordPress</span>
             </div>
         </div>
+
+        <!-- 4: EDUCATION + SOCIAL -->
+        <div class="row">
+            <div class="w w-edu">
+                <div class="chip-label">Formação</div>
+                <div class="edu-item">
+                    <span class="edu-name">Téc. em Des. de Sistemas</span>
+                    <span class="edu-inst">Senai</span>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-name">Ciências da Computação</span>
+                    <span class="edu-inst">UNIFAJ</span>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-name">Dev Web & Industrial</span>
+                    <span class="edu-inst">Full Stack Developer</span>
+                </div>
+            </div>
+
+            <div class="w w-social">
+                <a class="s-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="s-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="s-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="s-btn tt" href="https://www.tiktok.com/@" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 5: PROJECTS -->
+        <div class="w w-projects">
+            <div class="chip-label">Projetos em Destaque</div>
+            <div class="project-list">
+                <a class="proj" href="#" target="_blank">
+                    <div class="proj-info">
+                        <span class="proj-name">
+                            <span class="proj-dot" style="background:#a855f7"></span>
+                            Dashboard Financeiro
+                        </span>
+                        <span class="proj-stack">Next.js · Supabase · Interface Web</span>
+                    </div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
+                <a class="proj" href="#" target="_blank">
+                    <div class="proj-info">
+                        <span class="proj-name">
+                            <span class="proj-dot" style="background:#6366f1"></span>
+                            Portfolio Pessoal
+                        </span>
+                        <span class="proj-stack">HTML · CSS · JavaScript · Vercel</span>
+                    </div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
+                <a class="proj" href="#" target="_blank">
+                    <div class="proj-info">
+                        <span class="proj-name">
+                            <span class="proj-dot" style="background:#22c55e"></span>
+                            Em breve...
+                        </span>
+                        <span class="proj-stack">React · Node.js · API REST</span>
+                    </div>
+                    <i class="fas fa-arrow-right proj-arrow"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 6: CTA -->
+        <a class="w w-cta" href="assets/pages/portfolio/portfolio.html" target="_blank">
+            <div class="cta-left">
+                <div class="cta-icon"><i class="fas fa-globe"></i></div>
+                <div>
+                    <div class="cta-title">Ver Portfolio Completo</div>
+                    <div class="cta-sub">Todos os projetos e trabalhos</div>
+                </div>
+            </div>
+            <i class="fas fa-arrow-right cta-arrow"></i>
+        </a>
+
+        <!-- 7: SPOTIFY -->
+        <div class="w w-spotify">
+            <div class="spotify-head">
+                <span class="sp-dot"></span>
+                <span class="sp-label">Estou escutando…</span>
+            </div>
+            <iframe style="border-radius:10px"
+                src="https://open.spotify.com/embed/album/7Cus5NmQFHfg9IUpCNrIuq?utm_source=generator"
+                width="100%" height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+
     </div>
+</div>
 
-    <script src="assets/script/animationLoading.js"></script>
+<script>
+    const bar  = document.getElementById('loading-bar');
+    const pct  = document.getElementById('loading-pct');
+    const scr  = document.getElementById('loading-screen');
+
+    let p = 0;
+    const tick = setInterval(() => {
+        p += Math.random() * 14 + 4;
+        if (p >= 100) {
+            p = 100;
+            clearInterval(tick);
+        }
+        bar.style.width = p + '%';
+        pct.textContent = Math.floor(p) + '%';
+        if (p === 100) setTimeout(() => scr.classList.add('gone'), 380);
+    }, 100);
+</script>
+
 </body>
-
 </html>
