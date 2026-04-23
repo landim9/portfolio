@@ -1,210 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Landim</title>
-
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="shortcut icon" href="assets/img/927500313834.png" type="image/x-icon">
+    <title>Rafael Landim — Portfolio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
-
 <body id="page-top">
-    <header>
-        <div class="header-bg">
-            <nav class="menu">
-                <input type="checkbox" id="check">
 
-                <label for="check">
-                    <ion-icon name="menu-outline" id="btn"></ion-icon>
-                    <ion-icon name="close-outline" id="cancel"></ion-icon>
-                </label>
+<header>
+    <div class="header-inner">
+        <span class="logo">RL</span>
+        <input type="checkbox" id="check">
+        <label class="menu-toggle" for="check" aria-label="Menu">
+            <ion-icon name="menu-outline" class="ic"></ion-icon>
+            <ion-icon name="close-outline" class="icx"></ion-icon>
+        </label>
+        <ul class="nav-ul">
+            <li><a class="nav-link" href="#page-top">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
 
-                <ul class="nav-ul">
-                    <li><a class="a" href="#page-top">Home</a></li>
-                    <li><a class="a" href="#about">About</a></li>
-                    <li><a class="a" href="#projects">Projects</a></li>
-                    <li><a class="a" href="#skills">Skills</a></li>
-                    <li><a class="a" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<main>
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="home-content">
+            <div class="hi" data-aos="fade-down">
+                <h1>Hi There! 👋</h1>
+            </div>
+            <div class="name-row" data-aos="fade-up" data-aos-delay="80">
+                <span class="im-text">I'M</span>
+                <div class="animation">
+                    <p>Rafael Landim</p>
+                    <p>Web Developer</p>
+                    <p>Systems Engineer</p>
+                </div>
+            </div>
+            <div class="home-cta" data-aos="fade-up" data-aos-delay="160">
+                <a href="#projects" class="btn-grad">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn-ghost">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    Contact Me
+                </a>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section id="home" class="home">
-            <div class="home-content">
-                <div class="hi">
-                    <h1 data-aos="fade-up">Hi There!</h1>
+    <!-- ABOUT -->
+    <section id="about">
+        <h1 class="section-title" data-aos="fade-up">About <span class="hl">Me</span></h1>
+        <div class="about-grid">
+            <div class="about-photo" data-aos="fade-right">
+                <div class="photo-frame">
+                    <div class="photo-inner">
+                        <!-- <img src="/assets/images/profile.jpg" alt="Rafael Landim"> -->
+                        <ion-icon name="person-outline"></ion-icon>
+                        <small></small>
+                    </div>
                 </div>
+                <div class="about-stats">
+                    <div class="stat"><div class="stat-n">3+</div><div class="stat-l">Anos de código</div></div>
+                    <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Projetos</div></div>
+                    <div class="stat"><div class="stat-n">2</div><div class="stat-l">Formações</div></div>
+                    <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Aprendizado</div></div>
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2 class="hello-h">HELLO! I'M <span class="hl">RAFAEL</span></h2>
+                <p class="about-p">
+                    My name is Rafael Landim and I am a 19 years old web developer from Brazil.
+                    I have been working with <span class="js">JavaScript</span>,
+                    <span class="hc">HTML and CSS</span>.
+                </p>
+                <p class="about-p">
+                    I love to learn new things about programming languages and frameworks, always
+                    looking for the best solutions to solve problems in the web development world.
+                </p>
+                <p class="about-p">
+                    I am always looking for opportunities to improve myself.
+                    If you want to know more, feel free to contact me.
+                </p>
+                <p class="about-p">
+                    I have experience in creating websites, developing mobile applications, and
+                    designing interfaces for web pages.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="container" data-aos="fade-down">
-                    <h1>I'M</h1>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h1 class="section-title" data-aos="fade-up"><span class="hl">Projects</span></h1>
+        <div class="project-grid">
 
-                    <div class="animation">
-                        <p>Rafael Landim</p>
-                        <p>Web Developer</p>
-                        <p>Systems Engineer</p>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="proj-top" style="background:linear-gradient(90deg,#ff00ff,#3700ff)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">💰</div>
+                    <div class="proj-name">Dashboard Financeiro</div>
+                    <p class="proj-desc">Dashboard financeiro com interface web para controle de finanças pessoais. Projeto integra Next.js com PostgreSQL.</p>
+                    <div class="proj-stack">
+                        <span class="stag">Next.js</span>
+                        <span class="stag">PostgreSQL</span>
+                        <span class="stag">Interface Web</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
+                            <ion-icon name="logo-github"></ion-icon> GitHub
+                        </a>
+                        <a href="https://finance-dashboard-swart-chi.vercel.app/dashboard" class="pl live" target="_blank" rel="noopener">
+                            <ion-icon name="open-outline"></ion-icon> Ver Live
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="about" class="about">
-            <h1 class="section-title">About Me</h1>
-
-            <div class="container-about">
-                <div class="content-about">
-                    <div class="info">
-                        <h2 data-aos="fade-up">HELLO! I'M <span class="rafael">RAFAEL</span></h2>
-
-                        <br>
-
-                        <p data-aos="fade-left">
-                            My name is Rafael Landim and I am a 19 years old web developer from Brazil.
-                            I have been working with
-                            <span class="js">JavaScript</span>,
-                            <span class="h-c">HTML and CSS</span>.
-                        </p>
-
-                        <br>
-
-                        <p data-aos="fade-right">
-                            I love to learn new things about programming languages and frameworks, always
-                            looking for the best solutions to solve problems in the web development world.
-                        </p>
-
-                        <br>
-
-                        <p data-aos="fade-left">
-                            I am always looking for opportunities to improve myself.
-                            If you want to know more, feel free to contact me.
-                        </p>
-
-                        <br>
-
-                        <p data-aos="fade-right">
-                            I have experience in creating websites, developing mobile applications, and
-                            designing interfaces for web pages.
-                        </p>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="proj-top" style="background:linear-gradient(90deg,#6366f1,#a855f7)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">🪪</div>
+                    <div class="proj-name">Link in Bio</div>
+                    <p class="proj-desc">Página de apresentação estilo bento grid com integração Spotify, redes sociais e animação de loading. Deploy na Vercel.</p>
+                    <div class="proj-stack">
+                        <span class="stag">HTML</span>
+                        <span class="stag">CSS</span>
+                        <span class="stag">JavaScript</span>
+                        <span class="stag">Vercel</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
+                            <ion-icon name="logo-github"></ion-icon> GitHub
+                        </a>
+                        <a href="https://landim.vercel.app" class="pl live" target="_blank" rel="noopener">
+                            <ion-icon name="open-outline"></ion-icon> Ver Live
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="projects">
-            <h1 class="section-title">Projects</h1>
-
-            <div class="project-container">
-                <div class="cards1" data-aos="fade-right">
-                    <div class="package">
-                        <div class="package2"></div>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="proj-top" style="background:linear-gradient(90deg,#06b6d4,#3b82f6)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">🌐</div>
+                    <div class="proj-name">Portfolio Pessoal</div>
+                    <p class="proj-desc">Site de portfólio com animações AOS, navegação responsiva, seção de projetos, skills e formulário de contato.</p>
+                    <div class="proj-stack">
+                        <span class="stag">HTML</span>
+                        <span class="stag">CSS</span>
+                        <span class="stag">JavaScript</span>
+                        <span class="stag">AOS</span>
                     </div>
-
-                    <div class="package">
-                        <div class="package2"></div>
-                    </div>
-
-                    <div class="package">
-                        <div class="package2"></div>
-                    </div>
-                </div>
-
-                <div class="cards2" data-aos="fade-left">
-                    <div class="package">
-                        <div class="package2"></div>
-                    </div>
-
-                    <div class="package">
-                        <div class="package2"></div>
-                    </div>
-
-                    <div class="package">
-                        <div class="package2"></div>
+                    <div class="proj-links">
+                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
+                            <ion-icon name="logo-github"></ion-icon> GitHub
+                        </a>
+                        <a href="#" class="pl live" target="_blank" rel="noopener">
+                            <ion-icon name="open-outline"></ion-icon> Ver Live
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="skills">
-            <h1 class="section-title">Skills</h1>
-
-            <div class="skills">
-                <div class="box">
-                    <ion-icon name="logo-html5"></ion-icon>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="proj-top" style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">⚡</div>
+                    <div class="proj-name">Em breve...</div>
+                    <div class="wip-wrap">
+                        <span class="wip-badge">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            Em desenvolvimento
+                        </span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="stag">React</span>
+                        <span class="stag">Node.js</span>
+                        <span class="stag">API REST</span>
+                    </div>
                 </div>
+            </div>
 
-                <div class="box">
-                    <ion-icon name="logo-css3"></ion-icon>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="proj-top" style="background:linear-gradient(90deg,#10b981,#06b6d4)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">📱</div>
+                    <div class="proj-name">Em breve...</div>
+                    <div class="wip-wrap">
+                        <span class="wip-badge">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            Em desenvolvimento
+                        </span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="stag">React Native</span>
+                        <span class="stag">Mobile</span>
+                    </div>
                 </div>
+            </div>
 
-                <div class="box">
-                    <ion-icon name="logo-javascript"></ion-icon>
+            <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="proj-top" style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
+                <div class="proj-body">
+                    <div class="proj-icon">🛒</div>
+                    <div class="proj-name">Em breve...</div>
+                    <div class="wip-wrap">
+                        <span class="wip-badge">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            Em desenvolvimento
+                        </span>
+                    </div>
+                    <div class="proj-stack">
+                        <span class="stag">PHP</span>
+                        <span class="stag">MySQL</span>
+                        <span class="stag">JavaScript</span>
+                    </div>
                 </div>
+            </div>
 
-                <div class="box">
-                    <ion-icon name="logo-react"></ion-icon>
-                </div>
+        </div>
+    </section>
 
-                <div class="box">
-                    <ion-icon name="logo-nodejs"></ion-icon>
-                </div>
+    <!-- SKILLS -->
+    <section id="skills">
+        <h1 class="section-title" data-aos="fade-up">My <span class="hl">Skills</span></h1>
+        <div class="skills-wrap">
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="0"><ion-icon name="logo-html5"></ion-icon><span>HTML5</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="40"><ion-icon name="logo-css3"></ion-icon><span>CSS3</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="80"><ion-icon name="logo-javascript"></ion-icon><span>JavaScript</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="120"><ion-icon name="logo-react"></ion-icon><span>React</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="160"><ion-icon name="logo-nodejs"></ion-icon><span>Node.js</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="240"><ion-icon name="server-outline"></ion-icon><span>Back-end</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="280"><ion-icon name="phone-portrait-outline"></ion-icon><span>Mobile</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="320"><ion-icon name="logo-wordpress"></ion-icon><span>WordPress</span></div>
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="360"><ion-icon name="hardware-chip-outline"></ion-icon><span>Arduino</span></div>
+        </div>
+    </section>
 
-                <div class="box">
+    <!-- CONTACT -->
+    <section id="contact">
+        <h1 class="section-title" data-aos="fade-up">Contact <span class="hl">Me</span></h1>
+        <div class="contact-inner" data-aos="fade-up" data-aos-delay="100">
+            <p class="contact-sub">
+                Tem um projeto em mente ou quer bater um papo?<br>
+                Estou sempre aberto a novas oportunidades e colaborações.
+            </p>
+            <div class="soc-row">
+                <a class="soc-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a class="soc-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <ion-icon name="logo-github"></ion-icon>
-                </div>
-
-                <div class="box">
-                    <ion-icon name="server-outline"></ion-icon>
-                </div>
-
-                <div class="box">
-                    <ion-icon name="phone-portrait-outline"></ion-icon>
-                </div>
+                </a>
+                <a class="soc-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a class="soc-btn gg" href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a" target="_blank" rel="noopener noreferrer" aria-label="Google">
+                    <ion-icon name="logo-google"></ion-icon>
+                </a>
             </div>
-        </section>
+            <a href="mailto:seu@email.com" class="btn-grad" style="margin:0 auto">
+                <ion-icon name="mail-outline"></ion-icon>
+                Enviar Email
+            </a>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h1 class="section-title">Contact Me</h1>
+</main>
 
-            <div class="card">
-                <div class="social">
-                    <a href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
+<footer>
+    <p>Copyright &copy; 2026 by Rafael David | All Rights Reserved.</p>
+</footer>
 
-                    <a href="https://github.com/landim9" target="_blank" rel="noopener noreferrer">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 680, once: true, easing: "ease-out-cubic" });
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
+    const sections = document.querySelectorAll("section[id]");
+    const links    = document.querySelectorAll(".nav-link");
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                links.forEach(l => l.classList.toggle("active",
+                    l.getAttribute("href") === "#" + e.target.id));
+            }
+        });
+    }, { threshold: 0.45 });
+    sections.forEach(s => io.observe(s));
 
-                    <a href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a"
-                        target="_blank" rel="noopener noreferrer">
-                        <ion-icon name="logo-google"></ion-icon>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <p>Copyright © 2023 by Rafael David | All Rights Reserved.</p>
-    </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
-    <script src="../../script/script.js" type="module"></script>
+    links.forEach(l => l.addEventListener("click", () => {
+        document.getElementById("check").checked = false;
+    }));
+</script>
 </body>
-
 </html>
