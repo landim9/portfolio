@@ -1,308 +1,546 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Landim — Portfolio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Landim — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/main.css">
 </head>
 <body id="page-top">
 
-<header>
-    <div class="header-inner">
-        <span class="logo">RL</span>
-        <input type="checkbox" id="check">
-        <label class="menu-toggle" for="check" aria-label="Menu">
-            <ion-icon name="menu-outline" class="ic"></ion-icon>
-            <ion-icon name="close-outline" class="icx"></ion-icon>
-        </label>
-        <ul class="nav-ul">
-            <li><a class="nav-link" href="#page-top">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-    </div>
+<!-- ── HEADER ──────────────────────────────────── -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#page-top" class="logo" aria-label="Rafael Landim">RL</a>
+    <input type="checkbox" id="check">
+    <label class="menu-toggle" for="check" aria-label="Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <nav>
+      <ul class="nav-ul">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-    <!-- HOME -->
-    <section id="home">
-        <div class="home-content">
-            <div class="hi" data-aos="fade-down">
-                <h1>Hi There! 👋</h1>
-            </div>
-            <div class="name-row" data-aos="fade-up" data-aos-delay="80">
-                <span class="im-text">I'M</span>
-                <div class="animation">
-                    <p>Rafael Landim</p>
-                    <p>Web Developer</p>
-                    <p>Systems Engineer</p>
-                </div>
-            </div>
-            <div class="home-cta" data-aos="fade-up" data-aos-delay="160">
-                <a href="#projects" class="btn-grad">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                    View Projects
-                </a>
-                <a href="#contact" class="btn-ghost">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    Contact Me
-                </a>
-            </div>
+  <!-- HOME ──────────────────────────────────────── -->
+  <section id="home">
+    <div class="home-bg-glow" aria-hidden="true"></div>
+    <div class="home-content">
+      <div class="home-eyebrow" data-aos="fade-down">
+        <span class="status-pill">
+          <span class="status-dot"></span>
+          Disponível para oportunidades
+        </span>
+      </div>
+      <h1 class="home-heading" data-aos="fade-up" data-aos-delay="80">
+        <span class="home-iam">I'M</span>
+        <div class="animation-wrap">
+          <div class="animation">
+            <p>Rafael Landim</p>
+            <p>Web Developer</p>
+            <p>Full Stack Dev</p>
+          </div>
         </div>
-    </section>
+      </h1>
+      <p class="home-sub" data-aos="fade-up" data-aos-delay="160">
+        Construindo interfaces precisas e sistemas robustos desde o front até o back-end.
+      </p>
+      <div class="home-cta" data-aos="fade-up" data-aos-delay="240">
+        <a href="#projects" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Ver Projetos
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contato
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h1 class="section-title" data-aos="fade-up">About <span class="hl">Me</span></h1>
-        <div class="about-grid">
-            <div class="about-photo" data-aos="fade-right">
-                <div class="photo-frame">
-                    <div class="photo-inner">
-                        <!-- <img src="/assets/images/profile.jpg" alt="Rafael Landim"> -->
-                        <ion-icon name="person-outline"></ion-icon>
-                        <small></small>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat"><div class="stat-n">3+</div><div class="stat-l">Anos de código</div></div>
-                    <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Projetos</div></div>
-                    <div class="stat"><div class="stat-n">2</div><div class="stat-l">Formações</div></div>
-                    <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Aprendizado</div></div>
-                </div>
-            </div>
-            <div class="about-text" data-aos="fade-left">
-                <h2 class="hello-h">HELLO! I'M <span class="hl">RAFAEL</span></h2>
-                <p class="about-p">
-                    My name is Rafael Landim and I am a 19 years old web developer from Brazil.
-                    I have been working with <span class="js">JavaScript</span>,
-                    <span class="hc">HTML and CSS</span>.
-                </p>
-                <p class="about-p">
-                    I love to learn new things about programming languages and frameworks, always
-                    looking for the best solutions to solve problems in the web development world.
-                </p>
-                <p class="about-p">
-                    I am always looking for opportunities to improve myself.
-                    If you want to know more, feel free to contact me.
-                </p>
-                <p class="about-p">
-                    I have experience in creating websites, developing mobile applications, and
-                    designing interfaces for web pages.
-                </p>
-            </div>
+  <!-- ABOUT ─────────────────────────────────────── -->
+  <section id="about">
+    <h2 class="section-title" data-aos="fade-up">About <span class="hl">Me</span></h2>
+    <div class="about-grid">
+      <div class="about-left" data-aos="fade-right" data-aos-delay="80">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <!-- Para foto: <img src="sua-foto.jpg" alt="Rafael Landim"> -->
+          </div>
         </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h1 class="section-title" data-aos="fade-up"><span class="hl">Projects</span></h1>
-        <div class="project-grid">
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
-                <div class="proj-top" style="background:linear-gradient(90deg,#ff00ff,#3700ff)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">💰</div>
-                    <div class="proj-name">Dashboard Financeiro</div>
-                    <p class="proj-desc">Dashboard financeiro com interface web para controle de finanças pessoais. Projeto integra Next.js com PostgreSQL.</p>
-                    <div class="proj-stack">
-                        <span class="stag">Next.js</span>
-                        <span class="stag">PostgreSQL</span>
-                        <span class="stag">Interface Web</span>
-                    </div>
-                    <div class="proj-links">
-                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
-                            <ion-icon name="logo-github"></ion-icon> GitHub
-                        </a>
-                        <a href="https://finance-dashboard-swart-chi.vercel.app/dashboard" class="pl live" target="_blank" rel="noopener">
-                            <ion-icon name="open-outline"></ion-icon> Ver Live
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
-                <div class="proj-top" style="background:linear-gradient(90deg,#6366f1,#a855f7)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">🪪</div>
-                    <div class="proj-name">Link in Bio</div>
-                    <p class="proj-desc">Página de apresentação estilo bento grid com integração Spotify, redes sociais e animação de loading. Deploy na Vercel.</p>
-                    <div class="proj-stack">
-                        <span class="stag">HTML</span>
-                        <span class="stag">CSS</span>
-                        <span class="stag">JavaScript</span>
-                        <span class="stag">Vercel</span>
-                    </div>
-                    <div class="proj-links">
-                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
-                            <ion-icon name="logo-github"></ion-icon> GitHub
-                        </a>
-                        <a href="https://landim.vercel.app" class="pl live" target="_blank" rel="noopener">
-                            <ion-icon name="open-outline"></ion-icon> Ver Live
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
-                <div class="proj-top" style="background:linear-gradient(90deg,#06b6d4,#3b82f6)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">🌐</div>
-                    <div class="proj-name">Portfolio Pessoal</div>
-                    <p class="proj-desc">Site de portfólio com animações AOS, navegação responsiva, seção de projetos, skills e formulário de contato.</p>
-                    <div class="proj-stack">
-                        <span class="stag">HTML</span>
-                        <span class="stag">CSS</span>
-                        <span class="stag">JavaScript</span>
-                        <span class="stag">AOS</span>
-                    </div>
-                    <div class="proj-links">
-                        <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
-                            <ion-icon name="logo-github"></ion-icon> GitHub
-                        </a>
-                        <a href="#" class="pl live" target="_blank" rel="noopener">
-                            <ion-icon name="open-outline"></ion-icon> Ver Live
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
-                <div class="proj-top" style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">⚡</div>
-                    <div class="proj-name">Em breve...</div>
-                    <div class="wip-wrap">
-                        <span class="wip-badge">
-                            <ion-icon name="construct-outline"></ion-icon>
-                            Em desenvolvimento
-                        </span>
-                    </div>
-                    <div class="proj-stack">
-                        <span class="stag">React</span>
-                        <span class="stag">Node.js</span>
-                        <span class="stag">API REST</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
-                <div class="proj-top" style="background:linear-gradient(90deg,#10b981,#06b6d4)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">📱</div>
-                    <div class="proj-name">Em breve...</div>
-                    <div class="wip-wrap">
-                        <span class="wip-badge">
-                            <ion-icon name="construct-outline"></ion-icon>
-                            Em desenvolvimento
-                        </span>
-                    </div>
-                    <div class="proj-stack">
-                        <span class="stag">React Native</span>
-                        <span class="stag">Mobile</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
-                <div class="proj-top" style="background:linear-gradient(90deg,#8b5cf6,#ec4899)"></div>
-                <div class="proj-body">
-                    <div class="proj-icon">🛒</div>
-                    <div class="proj-name">Em breve...</div>
-                    <div class="wip-wrap">
-                        <span class="wip-badge">
-                            <ion-icon name="construct-outline"></ion-icon>
-                            Em desenvolvimento
-                        </span>
-                    </div>
-                    <div class="proj-stack">
-                        <span class="stag">PHP</span>
-                        <span class="stag">MySQL</span>
-                        <span class="stag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-n">3+</span>
+            <span class="stat-l">Anos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-n">10+</span>
+            <span class="stat-l">Projetos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-n">2</span>
+            <span class="stat-l">Formações</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-n">∞</span>
+            <span class="stat-l">Aprendizado</span>
+          </div>
         </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <h1 class="section-title" data-aos="fade-up">My <span class="hl">Skills</span></h1>
-        <div class="skills-wrap">
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="0"><ion-icon name="logo-html5"></ion-icon><span>HTML5</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="40"><ion-icon name="logo-css3"></ion-icon><span>CSS3</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="80"><ion-icon name="logo-javascript"></ion-icon><span>JavaScript</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="120"><ion-icon name="logo-react"></ion-icon><span>React</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="160"><ion-icon name="logo-nodejs"></ion-icon><span>Node.js</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200"><ion-icon name="logo-github"></ion-icon><span>GitHub</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="240"><ion-icon name="server-outline"></ion-icon><span>Back-end</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="280"><ion-icon name="phone-portrait-outline"></ion-icon><span>Mobile</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="320"><ion-icon name="logo-wordpress"></ion-icon><span>WordPress</span></div>
-            <div class="skill-box" data-aos="zoom-in" data-aos-delay="360"><ion-icon name="hardware-chip-outline"></ion-icon><span>Arduino</span></div>
+      </div>
+      <div class="about-right" data-aos="fade-left" data-aos-delay="120">
+        <span class="about-eyebrow">Quem sou eu</span>
+        <h3 class="about-name">Rafael <span class="hl">Landim</span></h3>
+        <p class="about-p">
+          Desenvolvedor web de 19 anos com foco em <mark class="mk-js">JavaScript</mark>, <mark class="mk-hc">HTML e CSS</mark>, apaixonado por criar interfaces que combinam performance e experiência de usuário impecável.
+        </p>
+        <p class="about-p">
+          Sempre buscando as melhores soluções dentro do ecossistema web — desde o design do componente até a arquitetura da API.
+        </p>
+        <p class="about-p">
+          Tenho experiência em criação de sites, desenvolvimento de aplicações mobile e design de interfaces. Estou sempre aberto a novas oportunidades e colaborações.
+        </p>
+        <div class="about-badges">
+          <span class="about-badge">Next.js</span>
+          <span class="about-badge">React</span>
+          <span class="about-badge">Node.js</span>
+          <span class="about-badge">PostgreSQL</span>
+          <span class="about-badge">TypeScript</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h1 class="section-title" data-aos="fade-up">Contact <span class="hl">Me</span></h1>
-        <div class="contact-inner" data-aos="fade-up" data-aos-delay="100">
-            <p class="contact-sub">
-                Tem um projeto em mente ou quer bater um papo?<br>
-                Estou sempre aberto a novas oportunidades e colaborações.
-            </p>
-            <div class="soc-row">
-                <a class="soc-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-                <a class="soc-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a class="soc-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a class="soc-btn gg" href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a" target="_blank" rel="noopener noreferrer" aria-label="Google">
-                    <ion-icon name="logo-google"></ion-icon>
-                </a>
+  <!-- PROJECTS ──────────────────────────────────── -->
+  <section id="projects">
+    <h2 class="section-title" data-aos="fade-up"><span class="hl">Projects</span></h2>
+    <div class="project-grid">
+
+      <div class="proj-card featured" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-accent" style="--c1:#3b82f6;--c2:#06b6d4"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#3b82f6">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
-            <a href="mailto:seu@email.com" class="btn-grad" style="margin:0 auto">
-                <ion-icon name="mail-outline"></ion-icon>
-                Enviar Email
+            <span class="proj-badge live-badge">Live</span>
+          </div>
+          <h3 class="proj-name">Dashboard Financeiro</h3>
+          <p class="proj-desc">Dashboard financeiro com interface web para controle de finanças pessoais. Integra Next.js com PostgreSQL e autenticação.</p>
+          <div class="proj-stack">
+            <span class="stag">Next.js</span>
+            <span class="stag">PostgreSQL</span>
+            <span class="stag">Prisma</span>
+            <span class="stag">TypeScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
             </a>
+            <a href="https://finance-dashboard-swart-chi.vercel.app/dashboard" class="pl live" target="_blank" rel="noopener" aria-label="Ver demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver Live
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="proj-accent" style="--c1:#6366f1;--c2:#8b5cf6"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#6366f1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <span class="proj-badge live-badge">Live</span>
+          </div>
+          <h3 class="proj-name">Link in Bio</h3>
+          <p class="proj-desc">Página de apresentação estilo bento grid com integração Spotify, redes sociais e animação de loading. Deploy na Vercel.</p>
+          <div class="proj-stack">
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">JavaScript</span>
+            <span class="stag">Vercel</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://landim.vercel.app" class="pl live" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="proj-accent" style="--c1:#06b6d4;--c2:#3b82f6"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#06b6d4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+          </div>
+          <h3 class="proj-name">Portfolio Pessoal</h3>
+          <p class="proj-desc">Site de portfólio com animações AOS, navegação responsiva, seção de projetos, skills e formulário de contato.</p>
+          <div class="proj-stack">
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">JavaScript</span>
+            <span class="stag">AOS</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/landim9" class="pl gh" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="pl live" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card wip-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-accent" style="--c1:#f59e0b;--c2:#ef4444"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#f59e0b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <span class="proj-badge wip-badge">Em breve</span>
+          </div>
+          <h3 class="proj-name">Em desenvolvimento</h3>
+          <p class="proj-desc wip-desc">Novo projeto React + Node.js com API REST. Em construção.</p>
+          <div class="proj-stack">
+            <span class="stag">React</span>
+            <span class="stag">Node.js</span>
+            <span class="stag">API REST</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card wip-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="proj-accent" style="--c1:#10b981;--c2:#06b6d4"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#10b981">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <span class="proj-badge wip-badge">Em breve</span>
+          </div>
+          <h3 class="proj-name">App Mobile</h3>
+          <p class="proj-desc wip-desc">Aplicação mobile com React Native. Em construção.</p>
+          <div class="proj-stack">
+            <span class="stag">React Native</span>
+            <span class="stag">Mobile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card wip-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="proj-accent" style="--c1:#8b5cf6;--c2:#ec4899"></div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-icon-wrap" style="--ic:#8b5cf6">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <span class="proj-badge wip-badge">Em breve</span>
+          </div>
+          <h3 class="proj-name">E-commerce</h3>
+          <p class="proj-desc wip-desc">Plataforma de e-commerce com PHP + MySQL. Em construção.</p>
+          <div class="proj-stack">
+            <span class="stag">PHP</span>
+            <span class="stag">MySQL</span>
+            <span class="stag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS ────────────────────────────────────── -->
+<section id="skills">
+    <h2 class="section-title" data-aos="fade-up">My <span class="hl">Skills</span></h2>
+    <p class="skills-sub" data-aos="fade-up" data-aos-delay="60">Tecnologias e ferramentas que uso no dia a dia</p>
+  
+    <!-- Frontend -->
+    <div class="skills-category" data-aos="fade-up" data-aos-delay="80">
+      <span class="cat-label">Frontend</span>
+      <span class="cat-line"></span>
+    </div>
+    <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="skill-card" style="--glow:rgba(228,77,38,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(228,77,38,.12);--ic-border:rgba(228,77,38,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M20 3L18.5 19.5 12 21 5.5 19.5 4 3h16z" fill="#e44d26" opacity=".18" stroke="#e44d26" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M8 8h8M8.5 13h7l-.5 5-3 .75-3-.75-.2-2" stroke="#e44d26" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">HTML5</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(38,77,228,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(38,77,228,.12);--ic-border:rgba(38,77,228,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M20 3L18.5 19.5 12 21 5.5 19.5 4 3h16z" fill="#264de4" opacity=".18" stroke="#264de4" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M8 8h8M7.5 13h9l-.7 6-3.8 1-3.8-1-.3-3" stroke="#264de4" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">CSS3</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(247,223,30,0.16)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(247,223,30,.10);--ic-border:rgba(247,223,30,.26)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="2" fill="#f7df1e" opacity=".18" stroke="#f7df1e" stroke-width="1.4"/>
+            <path d="M8 16.5c.5.8 1.2 1.2 2.2 1.2 1.3 0 2-.7 2-2V11h-1.5v4.6c0 .7-.3 1-.9 1-.5 0-.9-.3-1.2-.8L8 16.5z" fill="#f7df1e"/>
+            <path d="M14 16.2c.6.9 1.4 1.5 2.8 1.5 1.5 0 2.5-.8 2.5-2 0-1.1-.6-1.7-2-2.2l-.6-.2c-.7-.3-.9-.5-.9-.9 0-.4.3-.6.8-.6.5 0 .9.2 1.2.7l1.1-.7c-.6-.9-1.3-1.2-2.3-1.2-1.4 0-2.3.8-2.3 2 0 1.1.6 1.7 1.8 2.1l.6.2c.8.3 1.1.5 1.1 1 0 .5-.4.8-1.1.8-.8 0-1.3-.4-1.7-1L14 16.2z" fill="#f7df1e"/>
+          </svg>
+        </div>
+        <span class="skill-label">JavaScript</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(97,218,251,0.16)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(97,218,251,.10);--ic-border:rgba(97,218,251,.24)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="2.5" fill="#61dafb"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1.3"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1.3" transform="rotate(60 12 12)"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61dafb" stroke-width="1.3" transform="rotate(120 12 12)"/>
+          </svg>
+        </div>
+        <span class="skill-label">React</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(240,240,245,0.10)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(240,240,245,.07);--ic-border:rgba(240,240,245,.16)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" fill="rgba(240,240,245,0.08)" stroke="rgba(240,240,245,0.6)" stroke-width="1.3"/>
+            <path d="M8 16V8l8 8V8" stroke="rgba(240,240,245,0.9)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">Next.js</span>
+      </div>
+  
+    </div>
+  
+    <!-- Backend & Database -->
+    <div class="skills-category" data-aos="fade-up" data-aos-delay="80">
+      <span class="cat-label">Backend &amp; Database</span>
+      <span class="cat-line"></span>
+    </div>
+    <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="skill-card" style="--glow:rgba(59,130,246,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(59,130,246,.12);--ic-border:rgba(59,130,246,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="2" fill="#3b82f6" opacity=".18" stroke="#3b82f6" stroke-width="1.4"/>
+            <path d="M8 9h8M12 9v6" stroke="#3b82f6" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M14.5 15V12a1.5 1.5 0 0 1 3 0v.5" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M14.5 14h3" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">TypeScript</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(131,205,41,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(131,205,41,.10);--ic-border:rgba(131,205,41,.25)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L4 7.5v9L12 21l8-4.5v-9L12 3z" fill="#83cd29" opacity=".15" stroke="#83cd29" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M9.5 10.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v1c0 1.38-1.12 2.5-2.5 2.5" stroke="#83cd29" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="16" r=".8" fill="#83cd29"/>
+          </svg>
+        </div>
+        <span class="skill-label">Node.js</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(51,103,145,0.22)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(51,103,145,.12);--ic-border:rgba(51,103,145,.30)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <ellipse cx="12" cy="6" rx="8" ry="2.5" fill="#336791" opacity=".2" stroke="#336791" stroke-width="1.4"/>
+            <path d="M4 6v12c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V6" stroke="#336791" stroke-width="1.4"/>
+            <path d="M4 12c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5" stroke="#336791" stroke-width="1.4"/>
+          </svg>
+        </div>
+        <span class="skill-label">PostgreSQL</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(119,123,180,0.20)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(119,123,180,.12);--ic-border:rgba(119,123,180,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <ellipse cx="12" cy="12" rx="10" ry="6" fill="#777bb4" opacity=".12" stroke="#777bb4" stroke-width="1.3"/>
+            <path d="M7 15V9l2 4 2-4v6M14.5 9h2a1.5 1.5 0 0 1 0 3h-2m0-3v6" stroke="#777bb4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">PHP</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(0,117,143,0.20)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(0,117,143,.12);--ic-border:rgba(0,117,143,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <ellipse cx="12" cy="6" rx="8" ry="2.5" fill="#00758f" opacity=".2" stroke="#00758f" stroke-width="1.4"/>
+            <path d="M4 6v12c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V6" stroke="#00758f" stroke-width="1.4"/>
+            <path d="M4 10c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5M4 14c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5" stroke="#00758f" stroke-width="1.4"/>
+          </svg>
+        </div>
+        <span class="skill-label">MySQL</span>
+      </div>
+  
+    </div>
+  
+    <!-- Ferramentas -->
+    <div class="skills-category" data-aos="fade-up" data-aos-delay="80">
+      <span class="cat-label">Ferramentas &amp; Outros</span>
+      <span class="cat-line"></span>
+    </div>
+    <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+  
+      <div class="skill-card" style="--glow:rgba(240,240,245,0.10)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(240,240,245,.06);--ic-border:rgba(240,240,245,.15)">
+          <svg viewBox="0 0 24 24" fill="rgba(240,240,245,0.75)">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </div>
+        <span class="skill-label">GitHub</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(36,150,237,0.20)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(36,150,237,.12);--ic-border:rgba(36,150,237,.28)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="11" width="4" height="3" rx=".5" fill="#2496ed" opacity=".3" stroke="#2496ed" stroke-width="1.2"/>
+            <rect x="7" y="11" width="4" height="3" rx=".5" fill="#2496ed" opacity=".3" stroke="#2496ed" stroke-width="1.2"/>
+            <rect x="7" y="7" width="4" height="3" rx=".5" fill="#2496ed" opacity=".2" stroke="#2496ed" stroke-width="1.2"/>
+            <rect x="12" y="11" width="4" height="3" rx=".5" fill="#2496ed" opacity=".3" stroke="#2496ed" stroke-width="1.2"/>
+            <rect x="12" y="7" width="4" height="3" rx=".5" fill="#2496ed" opacity=".2" stroke="#2496ed" stroke-width="1.2"/>
+            <path d="M22 12.5s-1-1.5-3.5-1c-.5-2-2.5-2.5-2.5-2.5s0 2-1.5 3c-2 1.5-5 1-7 .5C6 15 8 17 12 17c4.5 0 8-2 10-4.5z" fill="#2496ed" opacity=".2" stroke="#2496ed" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <span class="skill-label">Docker</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(43,197,162,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(43,197,162,.10);--ic-border:rgba(43,197,162,.25)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 20L12 4l7 12H5z" fill="rgba(43,197,162,0.15)" stroke="#2bc5a2" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M12 4v11M5 20l7-5 7 5" stroke="#2bc5a2" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">Prisma</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(0,151,157,0.18)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(0,151,157,.10);--ic-border:rgba(0,151,157,.25)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="4" fill="#00979d" opacity=".2" stroke="#00979d" stroke-width="1.4"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M5.64 18.36l2.12-2.12M16.24 7.76l2.12-2.12" stroke="#00979d" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">Arduino</span>
+      </div>
+  
+      <div class="skill-card" style="--glow:rgba(240,240,245,0.10)">
+        <div class="skill-icon-wrap" style="--ic-bg:rgba(240,240,245,.06);--ic-border:rgba(240,240,245,.15)">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 4L22 20H2L12 4z" fill="rgba(240,240,245,0.12)" stroke="rgba(240,240,245,0.75)" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="skill-label">Vercel</span>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- CONTACT ───────────────────────────────────── -->
+  <section id="contact">
+    <h2 class="section-title" data-aos="fade-up">Let's <span class="hl">Talk</span></h2>
+    <div class="contact-card" data-aos="fade-up" data-aos-delay="80">
+      <p class="contact-sub">
+        Tem um projeto em mente ou quer bater um papo?<br>
+        Estou sempre aberto a novas oportunidades e colaborações.
+      </p>
+      <div class="soc-row">
+        <a class="soc-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a class="soc-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a class="soc-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a class="soc-btn gg" href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a" target="_blank" rel="noopener noreferrer" aria-label="Google Skills">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" opacity=".7"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" opacity=".7"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" opacity=".7"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" opacity=".7"/></svg>
+        </a>
+      </div>
+      <a href="mailto:rafaeldavid@email.com" class="btn-primary" style="width:fit-content;margin:0 auto">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Enviar Email
+      </a>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-    <p>Copyright &copy; 2026 by Rafael David | All Rights Reserved.</p>
+  <div class="footer-inner">
+    <span class="footer-logo">RL</span>
+    <p>© 2026 Rafael David · Todos os direitos reservados</p>
+    <a href="#page-top" class="footer-top" aria-label="Voltar ao topo">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </a>
+  </div>
 </footer>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ duration: 680, once: true, easing: "ease-out-cubic" });
+  AOS.init({ duration: 700, once: true, easing: "ease-out-cubic", offset: 60 });
 
-    const sections = document.querySelectorAll("section[id]");
-    const links    = document.querySelectorAll(".nav-link");
-    const io = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-            if (e.isIntersecting) {
-                links.forEach(l => l.classList.toggle("active",
-                    l.getAttribute("href") === "#" + e.target.id));
-            }
-        });
-    }, { threshold: 0.45 });
-    sections.forEach(s => io.observe(s));
+  // Header scroll
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
 
-    links.forEach(l => l.addEventListener("click", () => {
-        document.getElementById("check").checked = false;
-    }));
+  // Active nav
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-link');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.45 });
+  sections.forEach(s => io.observe(s));
+
+  // Close mobile menu on link click
+  links.forEach(l => l.addEventListener('click', () => {
+    document.getElementById('check').checked = false;
+  }));
 </script>
 </body>
 </html>
