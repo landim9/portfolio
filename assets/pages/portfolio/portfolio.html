@@ -9,6 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 </head>
 <body id="page-top">
 
@@ -38,40 +43,54 @@
 
   <!-- HOME ──────────────────────────────────────── -->
   <section id="home">
-    <div class="home-bg-glow" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+  
     <div class="home-content">
-      <div class="home-eyebrow" data-aos="fade-down">
-        <span class="status-pill">
-          <span class="status-dot"></span>
-          Disponível para oportunidades
-        </span>
-      </div>
-      <h1 class="home-heading" data-aos="fade-up" data-aos-delay="80">
-        <span class="home-iam">I'M</span>
-        <div class="animation-wrap">
-          <div class="animation">
-            <p>Rafael Landim</p>
-            <p>Web Developer</p>
-            <p>Full Stack Dev</p>
+      <div><span class="status-pill"><span class="status-dot"></span>Disponível para oportunidades</span></div>
+      <p class="home-eyebrow">Full Stack Developer</p>
+      <h1 class="home-heading">
+        <span class="home-name">Rafael Landim</span>
+        <div class="home-role-wrap">
+          <div class="home-role-anim">
+            <p>Web Developer</p><p>Full Stack Dev</p><p>Systems Engineer</p>
           </div>
         </div>
       </h1>
-      <p class="home-sub" data-aos="fade-up" data-aos-delay="160">
-        Construindo interfaces precisas e sistemas robustos desde o front até o back-end.
-      </p>
-      <div class="home-cta" data-aos="fade-up" data-aos-delay="240">
+      <p class="home-sub">Construindo interfaces precisas e sistemas robustos desde o front até o back-end.</p>
+      <div class="home-chips">
+        <span class="chip">Next.js</span><span class="chip">React</span>
+        <span class="chip">Node.js</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span>
+      </div>
+      <div class="home-cta">
         <a href="#projects" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           Ver Projetos
         </a>
         <a href="#contact" class="btn-outline">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Contato
         </a>
       </div>
     </div>
+  
+    <div class="social-float" aria-hidden="true">
+      <a class="soc-mini" href="https://github.com/landim9" target="_blank" aria-label="GitHub">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a class="soc-mini" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" aria-label="LinkedIn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/>ircle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a class="soc-mini" href="https://www.instagram.com/landim1st/" target="_blank" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>e x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  
     <div class="scroll-hint" aria-hidden="true">
-      <span></span>
+      <span>scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
@@ -117,12 +136,24 @@
         <p class="about-p">
           Tenho experiência em criação de sites, desenvolvimento de aplicações mobile e design de interfaces. Estou sempre aberto a novas oportunidades e colaborações.
         </p>
-        <div class="about-badges">
-          <span class="about-badge">Next.js</span>
-          <span class="about-badge">React</span>
-          <span class="about-badge">Node.js</span>
-          <span class="about-badge">PostgreSQL</span>
-          <span class="about-badge">TypeScript</span>
+        <div class="timeline">
+          <p class="tl-label">Formação</p>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <span class="tl-name">Ciências da Computação</span>
+              <span class="tl-inst">UNIFAJ</span>
+              <span class="tl-year">2025 → presente</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <span class="tl-name">Técnico em Desenvolvimento de Sistemas</span>
+              <span class="tl-inst">Senai</span>
+              <span class="tl-year">2023 → 2024</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -477,29 +508,40 @@
   <!-- CONTACT ───────────────────────────────────── -->
   <section id="contact">
     <h2 class="section-title" data-aos="fade-up">Let's <span class="hl">Talk</span></h2>
-    <div class="contact-card" data-aos="fade-up" data-aos-delay="80">
-      <p class="contact-sub">
-        Tem um projeto em mente ou quer bater um papo?<br>
-        Estou sempre aberto a novas oportunidades e colaborações.
-      </p>
+    <div class="contact-card">
+      <h3 class="contact-headline">
+        Vamos construir algo <span class="hl">incrível</span> juntos?
+      </h3>
+      <p class="contact-sub">Tem um projeto em mente ou quer bater um papo? Estou sempre aberto a novas oportunidades e colaborações.</p>
+    
       <div class="soc-row">
-        <a class="soc-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a class="soc-btn ig" href="https://www.instagram.com/landim1st/" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>e x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
         </a>
-        <a class="soc-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <a class="soc-btn gh" href="https://github.com/landim9" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
         </a>
-        <a class="soc-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a class="soc-btn li" href="https://www.linkedin.com/in/rafael-david-792415375/" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/>ircle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
         </a>
-        <a class="soc-btn gg" href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a" target="_blank" rel="noopener noreferrer" aria-label="Google Skills">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" opacity=".7"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" opacity=".7"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" opacity=".7"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" opacity=".7"/></svg>
+        <a class="soc-btn gg" href="https://www.cloudskillsboost.google/public_profiles/c9dc6b79-89ae-41ca-9dfd-4c4bd5a0430a" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" opacity=".8"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" opacity=".8"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" opacity=".8"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" opacity=".8"/></svg>
+          Google
         </a>
       </div>
-      <a href="mailto:rafaeldavid@email.com" class="btn-primary" style="width:fit-content;margin:0 auto">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Enviar Email
-      </a>
+    
+      <div class="contact-divider"><span>ou envie um email</span></div>
+    
+      <div style="display:flex;flex-direction:column;align-items:center;gap:.6rem">
+        <a href="mailto:seu@email.com" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Enviar Email
+        </a>
+        <span class="email-hint">seu@email.com</span>
+      </div>
     </div>
   </section>
 
